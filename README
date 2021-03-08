@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------------
+| Gherman Maria Irina  ____  ____  _  _   __     ____           324 CB         |
+|                     (_  _)(  __)( \/ ) / _\   (___ \                         |
+|                       )(   ) _) / \/ \/    \   / __/                         |
+|                      (__) (____)\_)(_/\_/\_/  (____)                         |
+|                                                                              |
+--------------------------------------------------------------------------------
+
+1. Show
+    Pentru a afisa tabelele mi-am facut propria functie de transpunere, cu
+cateva helpere care zic eu ca sunt straight forward.
+    Dupa ce am transpus tabelul, practic am facut maximul lungimii elementelor
+din toate listele, si dupa i-am dat un maplist ca sa imi scoata maximul pe linie
+(adica coloana, dar e transpus).
+
+2. Filter
+    Am implementat ceva asemanator (cred) cu ce am facut la curs, tot o functie
+de primea o variabila neinstantiata si o lega temporar la valoarea curenta (cu
+not), aplica conditia si daca nu era not-ul adevarat (adica conditia era 
+adevarata), o insera in rezultat. Nu stiu daca chiar seama cu ce a fost facut la
+curs, dar am tinut minte genul asta de functie dupa laborator-ul cu tic tac toe.
+
+3. Join
+    Se face intr-un rand cu maplist (duh), si cu un append pentru a-i pune
+TableSchema-ul
+
+4. Select
+    Am transpus din nou, si am facut un helper care verifica header-ul sa fie
+la fel cu cele date. Daca nu erau date in ordine, nu prea mai mergea asa usor.
+
+5. Complex queries
+    Complex query 1 a mers decent de repede, mi-am facut un helper ca sa vad
+daca numele de familie are sufixul 'escu', si am aplicat filter cu asta si
+conditia de medie. Puteam si pentru medii sa fac un helper dar sincer mi-a fost
+lene.
+
+    Complex query 2 a fost oribil. Am avut nevoie de multe helpere si mult
+brain crunching (sau poate am fost obosita). Sincer as sta sa explic exact ce
+face fiecare, dar mai sunt 10 minute pana la deadline, ups...
+    Basically cauta sa appendeze fiecarui film rating-ul corespunzator (ca nu
+aveam voie cu sort :) ), pune header-ul fix, ca stiu ce trb sa contina tabelul
+si face un filter. Partea grea sincer a fost la punerea rating-urilor. Am
+pierdut mult timp ca nu m-am uitat bine in enunt / refs si nu printam si
+coloana de ratings.... so yeah.
